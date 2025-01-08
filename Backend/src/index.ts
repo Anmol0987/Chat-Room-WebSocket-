@@ -19,7 +19,6 @@ ws.on("connection", (socket) => {
                 name: parsedMessage.payload.name
             })
         }
-
         if (parsedMessage.type == "chat") {
 
             const currentUserRoom = allUser.find((x) => x.socket == socket)?.room
